@@ -1,0 +1,100 @@
+@charset "utf-8"; 
+.songlist__song,
+.songlist__author {
+ margin:0;
+ color:#000;
+ line-height:1.5;
+}
+.singer_name,
+.js_song {
+ color:var(--font-color);
+ text-decoration:none
+}
+.c_tx_thin {
+ color:#999
+}
+.mod_cover__icon_play {
+ position:absolute;
+ left:50%;
+ top:50%;
+ margin:-35px;
+ width:70px;
+ height:70px;
+ opacity:0;
+ -webkit-transform:scale(.7) translateZ(0);
+ -webkit-transition-duration:.5s;
+}
+.mod_cover__mask {
+ position:absolute;
+ left:0;
+ top:0;
+ width:100%;
+ height:100%;
+ background-color:#000;
+ opacity:0;
+ transition:opacity .5s
+}
+.mod_cover__icon_play {
+ background-image:url(https://cdn.jsdelivr.net/gh/cnyist/blog/player/images/cover_play.png);
+}
+.mod_cover:hover .mod_cover__icon_play {
+ opacity:1;
+}
+.mod_cover:hover .mod_cover__mask {
+ opacity:.2;
+ -webkit-transition:opacity .5s;
+ transition:opacity .5s
+}
+.songlist__item {
+ display:inline-block;
+ width:100%
+}
+.songlist__item_box {
+ position:relative;
+ height:100%;
+ width: 100%;
+ overflow:hidden;
+ margin:-1px 30px 13px 0;
+ padding-top:12px;
+ font-size:14px
+}
+.songlist__link {
+ position:relative;
+ float:left;
+ width:86px;
+ height:86px;
+ margin-right:14px;
+ overflow:hidden
+}
+.songlist__pic {
+ display:block;
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ -webkit-transform:scale(1) translateZ(0);
+ -webkit-transition:-webkit-transform .75s;
+ transform:scale(1) translateZ(0);
+ transition:transform .75s;
+ object-fit:cover
+}
+.songlist__link:hover .songlist__pic {
+ -webkit-transform:scale(1.07) translateZ(0);
+ -webkit-transition:-webkit-transform .75s cubic-bezier(0,1,.75,1);
+ transform:scale(1.07) translateZ(0);
+ transition:transform .75s cubic-bezier(0,1,.75,1)
+}
+.songlist__song {
+ font-size:14px;
+ padding:21px 0 2px;
+ max-width:50%;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ font-weight:400
+}
+.songlist__time {
+ position:absolute;
+ right:0;
+ bottom:0;
+ line-height:86px
+}
