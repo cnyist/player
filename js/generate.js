@@ -15,3 +15,6 @@ function generate(music_id){
 
     music.innerHTML = innerHTML;
 }
+function generate_all(){
+    $('.song_item').each(function(){generate($(this).attr('id'))})
+}
