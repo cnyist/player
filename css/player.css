@@ -493,4 +493,7 @@ html, body, header, nav, footer, div, ul, ol, li, p, form, input, a, span, em, i
     left: 115px;
     text-align: center;
     font-family: '楷体';
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }

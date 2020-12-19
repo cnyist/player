@@ -1,6 +1,6 @@
 @charset "utf-8"; 
-.songlist__song,
-.songlist__author {
+.song_song,
+.song_author {
  margin:0;
  color:#000;
  line-height:1.5;
@@ -13,7 +13,7 @@
 .c_tx_thin {
  color:#999
 }
-.mod_cover__icon_play {
+.mod_cover_icon_play {
  position:absolute;
  left:50%;
  top:50%;
@@ -24,7 +24,7 @@
  -webkit-transform:scale(.7) translateZ(0);
  -webkit-transition-duration:.5s;
 }
-.mod_cover__mask {
+.mod_cover_mask {
  cursor:pointer;
  position:absolute;
  left:0;
@@ -35,23 +35,23 @@
  opacity:0;
  transition:opacity .5s
 }
-.mod_cover__icon_play {
+.mod_cover_icon_play {
  background-image:url(https://cdn.jsdelivr.net/gh/cnyist/blog/player/images/cover_play.png);
  cursor:pointer;
 }
-.mod_cover:hover .mod_cover__icon_play {
+.mod_cover:hover .mod_cover_icon_play {
  opacity:1;
 }
-.mod_cover:hover .mod_cover__mask {
+.mod_cover:hover .mod_cover_mask {
  opacity:.2;
  -webkit-transition:opacity .5s;
  transition:opacity .5s
 }
-.songlist__item {
+.song_item {
  display:inline-block;
  width:100%
 }
-.songlist__item_box {
+.song_item_box {
  position:relative;
  height:100%;
  width: 100%;
@@ -63,7 +63,7 @@
  padding: 20px;
  box-shadow: 0px 0px 30px #888;
 }
-.songlist__link {
+.song_link {
  position:relative;
  float:left;
  width:86px;
@@ -71,7 +71,7 @@
  margin-right:14px;
  overflow:hidden
 }
-.songlist__pic {
+.song_pic {
  display:block;
  width:100%;
  height:100%;
@@ -82,13 +82,13 @@
  transition:transform .75s;
  object-fit:cover
 }
-.songlist__link:hover .songlist__pic {
+.song_link:hover .song_pic {
  -webkit-transform:scale(1.07) translateZ(0);
  -webkit-transition:-webkit-transform .75s cubic-bezier(0,1,.75,1);
  transform:scale(1.07) translateZ(0);
  transition:transform .75s cubic-bezier(0,1,.75,1)
 }
-.songlist__song {
+.song_song {
  font-size:14px;
  padding:21px 0 2px;
  max-width:50%;
